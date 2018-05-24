@@ -5,7 +5,6 @@ function getFirstSelector (selector) {
   return element
 }
 /*
-*/
 function nestedTarget(){
   
 return  document.querySelector('div.target')
@@ -18,6 +17,8 @@ function deepestChild() {
     node[m].innerHTML
   }
   }
+*/
+
 
 function deepestChild() {
   let node = document.getElementById('grand-node')
