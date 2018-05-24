@@ -4,11 +4,14 @@ function getFirstSelector (selector) {
   
   return element
 }
-/*
+
 function nestedTarget(){
   
 return  document.querySelector('div.target')
 }
+
+/*
+
 
 function deepestChild() {
   const node = document.querySelectorAll('#grand-node div')
