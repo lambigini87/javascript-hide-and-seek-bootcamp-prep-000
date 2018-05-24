@@ -5,19 +5,29 @@ function getFirstSelector (selector) {
   return element
 }
 
-function nestedTarget(){
+// function nestedTarget(){
   
- return  document.querySelector('div.target')
-}
+// return  document.querySelector('div.target')
+// }
 
+// function deepestChild() {
+//   const node = document.querySelectorAll('#grand-node div')
+//   for ( let m = 0; m< node.length;m++){
+//     if ( m === node.length -1 )
+//     node[m].innerHTML
+//   }
+//   }
 function deepestChild() {
-  const node = document.querySelectorAll('#grand-node div')
-  for ( let m = 0; m< node.length;m++){
-    if ( m === node.length -1 )
-    node[m].innerHTML
-  }
+  let node = document.getElementById('grand-node')
+  let nextNode = node.children[0]
+
+  while (nextNode) {
+    node = nextNode
+    nextNode = node.children[0]
   }
 
+  return node
+}
 
 
 function increaseRankBy(n) {
